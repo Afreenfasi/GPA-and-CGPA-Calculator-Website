@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CGPA Calculator Anna University Regulation 2017 & 2021</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css" >
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="language" content="english">
+
+    <style type="text/css">
+        /*#FFBE32*/
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  black;
+}
+
+body{
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.head{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  black;
+}
+
+.head h1{
+    font-weight: bolder;
+}
+
+article h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article{
+    height: auto;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 ;
+    background-image: linear-gradient(to top,#84fab0,#8fd3f4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: 0.3s;
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+article:hover{
+    box-shadow: 0 8px 16px 0 ;
+}
+
+abbr,a{
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+.departments{
+
+background-color: #002F68;
+ 
+
+
+}
+
+.departments-button{
+    margin: 30px auto;
+    
+
+}
+
+.departments-button input[type='button']{
+    border-radius: 12px;
+    border: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #002F68;
+    /*background-image: linear-gradient(black,black);*/
+
+    box-shadow: 0 8px 16px 0 #8fd3f4;
+
+}
+
+.departments-button input[type='button']:hover{
+    box-shadow: 0 16px 32px 0 #8fd3f4;
+
+}
+
+
+/*
+
+departments page
+
+*/
+
+
+.departments input{
+    border-radius: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+   /* background-image: linear-gradient(#1cd8d2,#93edc7); */
+    color:  whitesmoke;
+    
+    /*height: 50px;*/
+    margin-top: 10px;
+    padding: 5px;
+    border:  none;
+    background: transparent;
+    width: 20px;
+      /*animation-name: example;
+    animation-duration: 2s;
+    margin-left: 50px;*/
+    float: left;
+    margin-bottom: 30px;
+
+    
+   
+}
+.departments{
+    margin-left: -500px;
+
+
+}
+
+
+
+/*@keyframes example{
+    from{ margin-left: 0px; }
+    to { margin-left: 50px; }
+    
+
+
+}*/
+
+#dept1{
+    
+    animation-name: example1;
+    animation-duration: 1s;
+    width: 100%;
+    margin-left: 135px;
+}
+@keyframes example1{
+    from{ margin-left: -500px; }
+    to { margin-left: 135px; }
+}
+#dept2{
+    
+    animation-name: example2;
+    animation-duration: 1s;
+    width: 100%;
+    animation-delay: 1s;
+    margin-left: 130px;
+}
+@keyframes example2{
+   from{ margin-left: -500px; }
+    to { margin-left: 130px; }
+}
+#dept3{
+  
+    animation-name: example3;
+    animation-duration: 1s;
+    width: 100%;
+    animation-delay: 2s;
+    margin-left: 130px;
+}
+@keyframes example3{
+    from{ margin-left: -500px; }
+    to { margin-left: 130px; }
+}
+#dept4{
+   
+    animation-name: example4;
+    animation-duration: 1s;
+    width: 100%;
+    animation-delay: 3s;
+    margin-left: 130px;
+}
+@keyframes example4{
+    from{ margin-left: -500px; }
+    to { margin-left: 130px; }
+}
+#dept5{
+
+    animation-name: example5;
+    animation-duration: 1s;
+    width: 100%;
+    animation-delay: 4s;
+    margin-left: 130px;
+}
+@keyframes example5{
+    from{ margin-left: -500px; }
+    to { margin-left: 130px; }
+}
+#dept6{
+
+    animation-name: example6;
+    animation-duration: 1s;
+    width: 100%;
+    animation-delay: 5s;
+    margin-left: 130px;
+}
+@keyframes example6{
+    from{ margin-left: -500px; }
+    to { margin-left: 130px; }
+}
+
+
+.departments.others input{
+    background-image: linear-gradient(to bottom,#2f80ed,#56ccf2);
+
+}
+
+
+.departments input:hover{
+    box-shadow: 0 8px 16px 0 white;
+
+}
+
+
+
+/*
+cgpa calculator
+*/
+
+.title-break{
+    display: block !important;
+}
+.cgpa-head{
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: #000066;
+}
+
+.department-title{
+    /*text-shadow: 2px 2px 5px ;*/
+}
+
+.dept-hidden{
+    display: none;
+}
+
+.body-table-container{
+    text-align: center;
+}
+
+table:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+
+table{
+    margin: 0 auto;
+    table-layout: fixed;
+    border-radius: 12px;
+}
+
+    table tr td {
+          border: 1px solid BLACK; 
+  border-collapse: collapse;
+  font-size: 35px;
+  color: #000066;
+  text-align: center;
+  width:  70%;
+  padding: 12px;
+    }
+
+table tr td input[type='button']{
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #FFBE32;
+    /*background-image: linear-gradient(#fc4a1a,#f7b733);*/
+}
+
+
+table tr td input[type='text']{
+    padding: 8px;
+}
+
+
+.error-messages{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calculate-cgpa-btn{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 12px;
+    border: transparent;
+    
+    background-color: #FFBE32;
+    color: white;
+
+}
+
+.calculate-cgpa-btn:hover{
+    box-shadow: 0 8px 16px 0 whitesmoke;
+}
+
+
+/*
+GPA calculator
+*/
+
+.body-table-container label{
+    text-transform: uppercase !important;
+     
+}
+
+.table-head th{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFBE32;
+    border-radius: 12px;
+}
+
+.body-table-container form input.sem-hidden{
+    display: none !important;
+}
+
+.body-table-container form input.hidden-subject-no{
+    display: none !important;
+}
+
+.calculate-gpa-btn{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    /*box-shadow: 4px 4px 8px 8px whitesmoke;*/
+    /*background-image: linear-gradient(#fc4a1a,#f7b733);*/
+    background-color: #FFBE32;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.calculate-gpa-btn:hover{
+    box-shadow: 4px 4px 8px 8px whitesmoke;
+
+}
+
+
+/*
+your CGPA
+*/
+
+.result-title{
+    padding: 20px;
+    margin: 10px;
+    color: turquoise;
+    text-shadow: 2px 2px 5px black;
+}
+
+.label{
+    padding: 10px;
+    text-align: center;
+    color: black;
+
+}
+
+.result h1{
+    
+    text-shadow: 2px 2px 5px black;
+}
+
+/*
+your GPA
+*/
+
+.arrears{
+    text-align: center;
+    color: red;
+}
+
+.arrears h2{
+    animation-name: arrears;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#cgpa{
+
+
+
+}
+
+@keyframes arrears{
+    from{color:turquoise}
+    to{color:red}
+}
+
+
+/*
+responsive for Tab
+*/
+
+@media (min-width:768px){
+    html{
+        height: auto;
+    }
+    body{
+        text-align: center;
+    }
+    article{
+        display: block;
+        padding: 20px;
+        margin: 10px auto;
+        height: auto;
+    }
+    .departments input{
+        width: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .title-break{
+        display: none !important;
+    }
+
+    table{
+        border-radius: 12px;
+    }
+    
+        table tr td {
+          border: 1px solid BLACK; 
+  border-collapse: collapse;
+  font-size: 35px;
+  color: #000066;
+  text-align: center;
+  width:  70%;
+  padding: 12px;
+    }
+
+}
+
+/*
+responsive for Desktop
+*/
+
+@media (min-width:1225px){
+    body{
+        text-align: center;
+    }
+    article{
+        display: block;
+        width: 30%;
+        height: 400px;
+        float: left;
+    }
+    .departments-button input[type='button']{
+        margin: 25px;
+    }
+    .departments input{
+        width: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .title-break{
+        display: none !important;
+    }
+
+    
+
+    table tr td {
+          border: 1px solid BLACK; 
+  border-collapse: collapse;
+  font-size: 35px;
+  color: #000066;
+  text-align: center;
+  width:  70%;
+  padding: 12px;
+    }
+
+    td label{
+
+        color:  black;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+}
+
+    </style>
+    
+
+</head>
+<body>
+    
+<div class="cgpa-head">
+    <h1>CGPA calculator</h1>
+    
+    <h1>REGULATION 2017 & 2021</h1>
+</div>
+
+ <div id="details" style="font-family: sans-serif; text-align: center; font-size: 20px; color: #000066;" >
+        <label id="lab1" style="font-weight: bold;">Name:</label>&nbsp;&nbsp;<input type="text" id="name" value="" size=50><br><br>
+<label id="lab2" style="font-weight: bold;">College:</label>&nbsp;&nbsp;<input type="text" id="college" value="" size=50><br><br>
+<label id="lab3" style="font-weight: bold;">University:</label>&nbsp;&nbsp;<input type="text" id="uni" value="" size=48><br><br>
+<button id="sub">SUBMIT</button>
+        
+    
+
+    <div id="result" style="font-weight:bold; color: #000066;"></div>
+
+
+</div>
+<script>
+document.getElementById("sub").onclick = function(){
+    var name = document.getElementById("name").value;
+    var college = document.getElementById("college").value;
+    var uni = document.getElementById("uni").value;
+     document.getElementById("name").style.display ='none';
+      document.getElementById("college").style.display ='none';
+       document.getElementById("uni").style.display ='none';
+       document.getElementById("lab1").style.display ='none';
+              document.getElementById("lab2").style.display ='none';
+
+       document.getElementById("lab3").style.display ='none';
+       document.getElementById("sub").style.display ='none';
+       document.getElementById("result").style.margin = "-110px 200px 20px 200px";
+              document.getElementById("result").style.border = "1.5px solid grey";
+
+              
+
+
+
+
+
+    document.getElementById("result").innerText ="Name: " + name+"\n\n College: " +college+"\n\nUniversity: "+uni;
+
+
+  
+}
+
+
+
+</script>
+<br>
+
+
+    
+<form class="cgpa-calculator-form" name="cgpa">
+    <input type="text" class="dept-hidden" name="department" value="cse">
+    <div class="body-table-container">
+        <table class="cgpa-calculator-table">
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_1">SEMESTER 1:</label></td>
+                <td><input type="text" name="sem_1" id="sem_1" placeholder="enter sem 1 GPA"></td>
+                
+            </tr>
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_2">SEMESTER 2:</label></td>
+                <td><input type="text" name="sem_2" id="sem_2" placeholder="enter sem 2 GPA" ></td>
+                
+            </tr>
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_3">SEMESTER 3:</label></td>
+                <td><input type="text" name="sem_3" id="sem_3" placeholder="enter sem 3 GPA"></td>
+                
+            </tr>
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_4">SEMESTER 4:</label></td>
+                <td><input type="text" name="sem_4" id="sem_4" placeholder="enter sem 4 GPA"></td>
+                
+            </tr>
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_5">SEMESTER 5:</label></td>
+                <td><input type="text" name="sem_5" id="sem_5" placeholder="enter sem 5 GPA"></td>
+                
+            </tr>
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_6">SEMESTER 6:</label></td>
+                <td><input type="text" name="sem_6" id="sem_6" placeholder="enter sem 6 GPA" ></td>
+                
+            </tr>
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_7">SEMESTER 7:</label></td>
+                <td><input type="text" name="sem_7" id="sem_7" placeholder="enter sem 7 GPA"></td>
+                
+            </tr>
+            <tr>
+                <td><label style="color:#000066; font-size: 20px;" for="sem_8">SEMESTER 8:</label></td>
+                <td><input type="text" name="sem_8" id="sem_8" placeholder="enter sem 8 GPA" ></td>
+                
+            </tr>
+        </table>
+    </div>
+    <div class="error-messages">
+        
+            
+        
+    </div>
+    <input style="margin: 10px;" type="button" onclick="calculatecgpa()" value="calculate CGPA" class="calculate-cgpa-btn">    
+</form>
+
+<div id="cgpa" style="font-weight:bold; color: #000066; font-size: 26px;"></div>
+
+<button style="margin: 10px;" onclick="printFunction()">Print</button>
+
+    <script>
+      function printFunction() { 
+        window.print(); 
+      }
+    </script>
+
+ 
+ 
+<script>
+   
+
+  var createGradesArray = function(sem_1, sem_2, sem_3, sem_4, sem_5, sem_6, sem_7, sem_8) {
+  var grades = [];
+  
+  if(sem_1 != 0) {
+    grades.push(sem_1)
+  } if(sem_2 != 0) {
+    grades.push(sem_2)
+  } if(sem_3 != 0) {
+    grades.push(sem_3)
+  } if(sem_4 != 0) {
+    grades.push(sem_4)
+  } if(sem_5 != 0) {
+    grades.push(sem_5)
+  } if(sem_6 != 0) {
+    grades.push(sem_6)
+  } if(sem_7 != 0) {
+    grades.push(sem_7)
+  } if(sem_8 != 0) {
+    grades.push(sem_8)
+  }
+  
+  if(grades.length > 0) {
+    return grades;
+  } else {
+    alert("Please enter at least one grade.")
+   
+  }
+};
+
+
+ 
+
+
+
+var averageGrades = function(grades) {
+  var x = 0;
+  var y = 0;
+ 
+
+  
+  
+  for(var i = 0; i < grades.length; i++) {
+    x = x + parseInt(grades[i])
+    y = y + 1
+    
+    
+  }
+
+  
+  
+  return x / y;
+};
+
+
+
+
+
+var printToDiv = function(gpa) {
+  document.getElementById("gpa").innerHTML = gpa
+};
+
+var calculatecgpa = function() {
+
+
+
+  var sem_1 = document.cgpa.sem_1.value;
+  var sem_2 = document.cgpa.sem_2.value;
+  var sem_3 = document.cgpa.sem_3.value;
+  var sem_4 = document.cgpa.sem_4.value;
+  var sem_5 = document.cgpa.sem_5.value;
+  var sem_6 = document.cgpa.sem_6.value;
+  var sem_7 = document.cgpa.sem_7.value;
+  var sem_8 = document.cgpa.sem_8.value;
+  
+ 
+  //alert(sem_1)
+
+  var grades = createGradesArray(sem_1, sem_2, sem_3, sem_4, sem_5, sem_6, sem_7, sem_8);
+  //alert(grades[1])
+  
+  
+
+  
+  var gpa = averageGrades(grades);
+
+  document.getElementById("cgpa").innerHTML ="CGPA = "+gpa;
+
+
+
+ // alert("Your CGPA is " + gpa)
+
+
+
+ // printToDiv(gpa);
+
+ 
+  
+
+  
+
+
+};
+</script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>GPA calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body style="background-color:white; color:#000066;">
+
+<h1>GPA Calculator</h1>
+<h2> Please Enter Your Grades:
+<div>
+<form name="grades">
+  <table>
+    <th>Subject</th>
+    <th>Credit</th>
+    <th>Grade</th>
+    
+    <tr>
+      <td>
+        Communicative English
+      <td>4
+        <select name="weight1" style="display: none;">
+          <option value=4>4</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          
+        </select>
+      </td>
+      <td>
+        <select name="grade1">
+          <option value="none" selected>Grade</option>
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Engineering Mathematics-I
+      </td>
+      <td>4
+        <select name="weight2" style="display: none;">
+          <option value=4>4</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          
+        </select>
+      </td>
+      <td>
+        <select name="grade2">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Engineering Physics
+      </td>
+      <td>3
+        <select name="weight3" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade3">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Engineering Chemistry
+      </td>
+      <td>3
+        <select name="weight4" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade4">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Problem Solving and Python
+Programming
+      </td>
+      <td>3
+        <select name="weight5" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade5">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        Engineering Graphics
+      </td>
+      <td>4
+        <select name="weight6" style="display: none;">
+          <option value=4>4</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          
+        </select>
+      </td>
+      <td>
+        <select name="grade6">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Physics and Chemistry Laboratory
+      </td>
+      <td>2
+        <select name="weight7" style="display: none;">
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade7">
+          <option value="none" selected>Grade</option>
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        Problem Solving and Python
+Programming Laboratory
+      </td>
+      <td>2
+        <select name="weight8" style="display: none;">
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade8">
+          <option value="none" selected>Grade</option>
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    
+      <td>
+        <input type="button" value="Calculate GPA" onClick="calculate()">
+      </td>
+      <td>
+        <input type="button" value="Reset" onClick="reset()">
+      </td>
+    </tr>
+      
+  </table>
+</form>
+
+</div>
+
+<div id="gpa"></div>
+
+<button onclick="printFunction()">Print</button>
+
+    <script>
+      function printFunction() { 
+        window.print(); 
+      }
+    </script>
+ 
+
+  <script  src="./script.js"></script>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>GPA calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body style="background-color:white; color:#000066;">
+
+  <div id="details" style="font-family: sans-serif; text-align: center; font-size: 20px;" >
+        <label id="lab1" style="font-weight: bold;">Name:</label>&nbsp;&nbsp;<input type="text" id="name" value="" size=50><br><br>
+<label id="lab2" style="font-weight: bold;">College:</label>&nbsp;&nbsp;<input type="text" id="college" value="" size=50><br><br>
+<label id="lab3" style="font-weight: bold;">University:</label>&nbsp;&nbsp;<input type="text" id="uni" value="" size=48><br><br>
+<button id="sub">SUBMIT</button>
+        
+    
+
+    <div id="result" style="font-weight:bold;"></div>
+
+
+</div>
+<script>
+document.getElementById("sub").onclick = function(){
+    var name = document.getElementById("name").value;
+    var college = document.getElementById("college").value;
+    var uni = document.getElementById("uni").value;
+     document.getElementById("name").style.display ='none';
+      document.getElementById("college").style.display ='none';
+       document.getElementById("uni").style.display ='none';
+       document.getElementById("lab1").style.display ='none';
+              document.getElementById("lab2").style.display ='none';
+
+       document.getElementById("lab3").style.display ='none';
+       document.getElementById("sub").style.display ='none';
+       document.getElementById("result").style.margin = "-110px 200px 20px 200px";
+              document.getElementById("result").style.border = "1.5px solid grey";
+
+              
+
+
+
+
+
+    document.getElementById("result").innerText ="Name: " + name+"\n\n College: " +college+"\n\nUniversity: "+uni;
+
+
+  
+}
+
+
+
+</script>
+
+
+<h1>GPA Calculator</h1>
+<h2> Please Enter Your Grades:
+<div>
+<form name="grades">
+  <table>
+    <th>Subject</th>
+    <th>Credit</th>
+    <th>Grade</th>
+    
+    <tr>
+      <td>
+        Design of Transmission
+Systems
+      </td>
+      <td>3
+        <select name="weight1" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade1">
+          <option value="none" selected>Grade</option>
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Computer Aided Design and
+Manufacturing 
+      </td>
+      <td>3
+        <select name="weight2" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade2">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Heat and Mass Transfer 
+      </td>
+      <td>4
+        <select name="weight3" style="display: none;">
+          <option value=4>4</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          
+        </select>
+      </td>
+      <td>
+        <select name="grade3">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Finite Element Analysis
+      </td>
+      <td>3
+        <select name="weight4" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade4">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    <tr>
+      <td>
+        Hydraulics and Pneumatics
+      </td>
+      <td>3
+        <select name="weight5" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade5">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        Professional Elective-I
+      </td>
+      <td>3
+        <select name="weight6" style="display: none;">
+          <option value=3>3</option>
+          <option value=2>2</option>
+          
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade6">
+          <option value="none" selected>Grade</option>
+          
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        CAD / CAM Laboratory
+      </td>
+      <td>2
+        <select name="weight7" style="display: none;">
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade7">
+          <option value="none" selected>Grade</option>
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        Design and Fabrication Project
+      </td>
+      <td>2
+        <select name="weight8" style="display: none;">
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade8">
+          <option value="none" selected>Grade</option>
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+
+     <tr>
+      <td>
+        Professional Communication
+      </td>
+      <td>1
+        <select name="weight9" style="display: none;">
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+        </select>
+      </td>
+      <td>
+        <select name="grade9">
+          <option value="none" selected>Grade</option>
+          <option value="a+">O</option>
+          <option value="a">A+</option>
+          <option value="a-">A</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <
+          <option value="f">F below</option>
+        </select>
+      </td>
+    </tr>
+      
+    
+      <td>
+        <input type="button" value="Calculate GPA" onClick="calculate()">
+      </td>
+      <td>
+        <input type="button" value="Reset" onClick="reset()">
+      </td>
+    </tr>
+      
+  </table>
+</form>
+
+</div>
+
+<div id="gpa"></div>
+
+<button onclick="printFunction()">Print</button>
+
+    <script>
+      function printFunction() { 
+        window.print(); 
+      }
+    </script>
+ 
+  <script  src="./script.js"></script>
+<br>
+<br>
+</body>
+</html>

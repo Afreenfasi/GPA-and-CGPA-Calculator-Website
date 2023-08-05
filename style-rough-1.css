@@ -1,0 +1,8 @@
+#bg-image-index{
+background-image:radial-gradient(rgba(255,140,0, 0.9), rgba(255,140,0, 0.1)),
+ url("Campus View of Kings College of Engineering Pudukottai_Campus-View.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
